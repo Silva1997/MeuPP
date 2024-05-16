@@ -70,7 +70,7 @@
     /* background: #fff; */
 }
 
-@media screen and (max-width: 360px) and (max-height: 740px) {
+@media (max-width: 360px) {
     .content-style {
         height: 200px;
         line-height: 120px;
