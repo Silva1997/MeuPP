@@ -24,21 +24,21 @@ import {
 } from "react-router-dom";
 import App from './App'
 import "./index.css";
-// import Root from "./Route/Rotas";
-// import ErrorPage  from "./Route/Erro";
-// const router = createBrowserRouter([
-//   {
-//     path: "/",
-//     element: <Root/>,
-//     errorElement: <ErrorPage />,
+import Root from "./Route/Rotas";
+import ErrorPage  from "./Route/Erro";
+const router = createBrowserRouter([
+  {
+    path: "*",
+    element: <Root/>,
+    errorElement: <ErrorPage />,
 
-//   },
-// ]);
+  },
+]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App/>
-    {/* <RouterProvider router={router} /> */}
+    {/* <App/> */}
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
