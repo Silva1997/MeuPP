@@ -1,4 +1,26 @@
 @media (min-width: 1100px) {
+    .texto1 {
+        text-align: center;
+        color: #26272b;
+        margin: 1rem;
+        font-weight: 500;
+    }
+    .ButaoN {
+        width: 8%;
+        /* background-color: #fff; */
+        background: #b152dd;
+        color: #fff;
+        font-weight: 500;
+        text-align: center;
+        border-radius: 0;
+    }
+    #h6p {
+        font-weight: 700;
+        text-align: center;
+    }
+    #h6pp {
+        text-align: center;
+    }
     .content {
         opacity: 0;
         /* Inicialmente, o conteúdo está oculto */
@@ -46,8 +68,9 @@
         padding-top: 12px;
     }
     .inputs {
-        width: 1000px;
-        border-radius: 20px 20px;
+        max-width: 800px;
+        border-radius: 0;
+        /* border-radius: 20px 20px; */
     }
     .content-style {
         margin: 0;
@@ -263,6 +286,36 @@
 }
 
 @media (max-width: 360px) {
+    .texto1 {
+        text-align: center;
+        color: #26272b;
+        margin: 1rem;
+        font-weight: 500;
+    }
+    .ButaoN {
+        width: 10vh;
+        /* background-color: #fff; */
+        background: #b152dd;
+        color: #fff;
+        font-weight: 500;
+        font-size: 10pt;
+        text-align: center;
+        border-radius: 0;
+        padding: 0.5rem;
+    }
+    .inputs {
+        width: 200px;
+        border-radius: 0;
+        font-size: 10pt;
+        height: 4.9vh;
+    }
+    #h6p {
+        text-align: center;
+    }
+    #h6pp {
+        text-align: center;
+        font-size: 11pt;
+    }
     .container {
         background-color: #282534;
         border-radius: 0 0 10px 10px;
@@ -327,10 +380,6 @@
         padding-top: 12px;
         justify-content: center;
         background-color: #282534;
-    }
-    .inputs {
-        width: 300px;
-        border-radius: 20px 20px;
     }
     .icon {
         display: block;
@@ -474,6 +523,36 @@
 }
 
 @media (max-width: 375px) {
+    .texto1 {
+        text-align: center;
+        color: #26272b;
+        margin: 1rem;
+        font-weight: 500;
+    }
+    .ButaoN {
+        width: 10vh;
+        /* background-color: #fff; */
+        background: #b152dd;
+        color: #fff;
+        font-weight: 500;
+        font-size: 10pt;
+        text-align: center;
+        border-radius: 0;
+        padding: 0.5rem;
+    }
+    .inputs {
+        width: 200px;
+        border-radius: 0;
+        font-size: 10pt;
+        height: 4.6vh;
+    }
+    #h6p {
+        text-align: center;
+    }
+    #h6pp {
+        text-align: center;
+        font-size: 11pt;
+    }
     .content-style {
         height: 200px;
         line-height: 120px;
@@ -483,10 +562,6 @@
         padding-top: 12px;
         justify-content: center;
         background-color: #282534;
-    }
-    .inputs {
-        width: 300px;
-        border-radius: 20px 20px;
     }
     .icon {
         display: block;
@@ -619,6 +694,36 @@
 }
 
 @media (max-width: 600px) {
+    .texto1 {
+        text-align: center;
+        color: #26272b;
+        margin: 1rem;
+        font-weight: 500;
+    }
+    .ButaoN {
+        width: 10vh;
+        /* background-color: #fff; */
+        background: #b152dd;
+        color: #fff;
+        font-weight: 500;
+        font-size: 10pt;
+        text-align: center;
+        border-radius: 0;
+        padding: 0.5rem;
+    }
+    .inputs {
+        width: 350px;
+        border-radius: 0;
+        font-size: 10pt;
+        height: 4.3vh;
+    }
+    #h6p {
+        text-align: center;
+    }
+    #h6pp {
+        text-align: center;
+        font-size: 11pt;
+    }
     .INput {
         display: flex;
         align-items: center;
@@ -643,11 +748,11 @@
         margin: 2rem;
         grid-template-columns: repeat(1, 1fr);
     }
-    .INput {
+    /* .INput {
         display: flex;
         align-items: center;
         background-color: #282534;
-    }
+    } */
     .H6menu {
         display: flex;
         justify-content: center;
@@ -668,10 +773,10 @@
         justify-content: center;
         background-color: #282534;
     }
-    .inputs {
+    /* .inputs {
         width: 500px;
         border-radius: 20px 20px;
-    }
+    } */
     .icon {
         display: block;
         justify-items: center;
@@ -703,6 +808,23 @@
 }
 
 @media (max-width: 414px) {
+    .texto1 {
+        text-align: center;
+        color: #26272b;
+        margin: 1rem;
+        font-weight: 500;
+    }
+    .ButaoN {
+        width: 10vh;
+        /* background-color: #fff; */
+        background: #b152dd;
+        color: #fff;
+        font-weight: 500;
+        font-size: 10pt;
+        text-align: center;
+        border-radius: 0;
+        padding: 0.5rem;
+    }
     .container {
         background-color: #282534;
         border-radius: 0 0 10px 10px;
@@ -745,15 +867,11 @@
         height: 200px;
         line-height: 120px;
     }
-    /* .INput {
-        display: 'flex';
-        padding-top: 12px;
-        justify-content: center;
-        background-color: #282534;
-    } */
     .inputs {
-        width: 300px;
-        border-radius: 20px 20px;
+        width: 200px;
+        border-radius: 0;
+        font-size: 10pt;
+        height: 4.8vh;
     }
     .icon {
         display: block;
@@ -783,14 +901,22 @@
         justify-content: center;
         margin-top: 1.2rem;
     }
+    #h6p {
+        text-align: center;
+    }
+    #h6pp {
+        text-align: center;
+        font-size: 11pt;
+    }
     .site-footer {
         margin-top: 32px;
         z-index: 1;
         display: grid;
-        position: relative;
+        /* position: relative; */
         border-right: 2px solid #b152dd;
         border-left: 2px solid #b152dd;
         grid-template-columns: repeat(3, 1fr);
+        flex-direction: column;
         /* Dividindo em 3 colunas */
         grid-gap: 20px;
         /* Espaçamento entre as colunas */
@@ -886,6 +1012,36 @@
 }
 
 @media (max-width: 412px) {
+    .texto1 {
+        text-align: center;
+        color: #26272b;
+        margin: 1rem;
+        font-weight: 500;
+    }
+    .ButaoN {
+        width: 10vh;
+        /* background-color: #fff; */
+        background: #b152dd;
+        color: #fff;
+        font-weight: 500;
+        font-size: 10pt;
+        text-align: center;
+        border-radius: 0;
+        padding: 0.5rem;
+    }
+    .inputs {
+        width: 200px;
+        border-radius: 0;
+        font-size: 10pt;
+        height: 4.6vh;
+    }
+    #h6p {
+        text-align: center;
+    }
+    #h6pp {
+        text-align: center;
+        font-size: 11pt;
+    }
     .INput {
         display: flex;
         align-items: center;
@@ -932,8 +1088,8 @@
         background-color: #282534;
     }  */
     .inputs {
-        width: 300px;
-        border-radius: 20px 20px;
+        width: 200px;
+        /* border-radius: 0px 0px; */
     }
     .icon {
         display: block;

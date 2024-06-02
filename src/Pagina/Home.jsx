@@ -28,11 +28,14 @@ const App = () => {
   return (
     <>
       <div className='INput'  >
-        <Input size="large" className='inputs' placeholder="Procurar itens perdidos" prefix={<SearchIcon color='primary' />}
+        <Input size="large" className='inputs' placeholder="Perdeu algum documento ou objecto ?" prefix={<SearchIcon color='primary'  fontSize='10px'/>}
           value={pesquisar}
           onChange={(e) => setPesquisar(e.target.value)}
           onKeyDown={handlePesquisa}
-        />
+        /> 
+        <button className='ButaoN' type="submit">
+          Pesquisar
+        </button>
       </div>
       {/*  */}
       <div className="container" style={{
@@ -58,6 +61,12 @@ const App = () => {
         </Carousel>
 
       </div>
+      <section>
+<h3  className='texto1'>
+Achados e perdidos mais recentes
+</h3>
+
+      </section>
       {/*  */}
       <div className="card-container">
         <Card bordered={false} className="card-style">
@@ -99,7 +108,7 @@ const App = () => {
           <div className='H6menu'>
             <h6 id='H6'>Sobre nos</h6>
           </div>
-          <p>
+          <p style={{padding:'0.3rem'}}>
             Bem-vindo ao [Nome do Site], o seu portal
             confiável para encontrar e recuperar documentos
             perdidos! Nossa missão é reunir pessoas com seus
@@ -114,7 +123,7 @@ const App = () => {
             <h6  id='H6' >Quem Somos</h6>
           </div>
 
-          <p>
+          <p style={{padding:'0.3rem'}}>
             Somos uma equipe dedicada de profissionais comprometidos em fornecer
             um serviço comunitário valioso. Nosso site foi criado para servir como
             um ponto centralizado onde pessoas podem registrar
@@ -160,7 +169,7 @@ const App = () => {
 
 
       <FloatButton.BackTop style={{
-        right: 24
+        right: 45
       }} />
       <Rodape />
 
@@ -180,21 +189,21 @@ function Rodape() {
 
       <div className='divfooter' >
         <div style={{ marginTop: '2rem', marginLeft: '2rem' }}>
-          <input type="text" placeholder='Digite o seu email' className='Entrada' />
-          <h6>
+          {/* <input type="text" placeholder='Digite o seu email' className='Entrada' /> */}
+          <h6 id='h6p' >
             Contactos
           </h6>
-          <p>Alcance seus objetivos de encontrar itens</p>
+          <p id='h6pp' > Alcance seus objetivos de encontrar itens</p>
         </div>
 
       </div>
 
       <div className='divfooter' >
         <div style={{ marginTop: '2rem', padding: '4px 4px' }}>
-          <h6>
+        <h6 id='h6p' >
             Notocia
           </h6>
-          <p>  Encontre seus itens perdidos com facilidade</p>
+          <p id='h6pp' >  Encontre seus itens perdidos com facilidade</p>
 
 
 
@@ -209,10 +218,10 @@ function Rodape() {
       </div>
       <div className='divfooter'>
         <div style={{ marginTop: '2rem', padding: '4px 4px' }}>
-          <h6>
+        <h6 id='h6p' >
             Suporte
           </h6>
-          <p>  Valorize suas posses encontrando-as facilmente</p>
+          <p  id='h6pp' >  Valorize suas posses encontrando-as facilmente</p>
         </div>
       </div>
 
