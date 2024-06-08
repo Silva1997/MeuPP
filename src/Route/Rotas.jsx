@@ -35,17 +35,18 @@ function CustomMenu() {
   ];
 
   return (<div>
-
-<Menu mode="horizontal" theme="light">
+{/* mode="horizontal" icon={item.icon}
+icon={item.icon}*/}
+<Menu mode='horizontal'  theme="light" style={{ position: 'fixed', zIndex: 1, width: '100%' }} >
       {items.map(item => (
         item.children ? (
-          <SubMenu key={item.key} icon={item.icon} title={item.label}>
+          <SubMenu key={item.key}  title={item.label} className='ItemMenu'>
             {item.children.map(child => (
-              <Menu.Item key={child.key}>{child.label}</Menu.Item>
+              <Menu.Item key={child.key}   className='ItemMenu'>{child.label}</Menu.Item>
             ))}
           </SubMenu>
         ) : (
-          <Menu.Item key={item.key} icon={item.icon}>
+          <Menu.Item key={item.key}  className='ItemMenu'>
             <Link to={item.link}>{item.label}</Link>
           </Menu.Item>
         )
