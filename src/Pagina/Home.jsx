@@ -1,11 +1,10 @@
-import React,{useState,useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import { Carousel, Card, Input } from 'antd';
 import foto from '../assets/imagens.png';
-import Photo from '../assets/friends.png';
-import foto1 from '../assets/image3.png';
+import Photo from '../assets/carteira-de-identidade.png';
 import foto2 from '../assets/image1.png';
-import imagem from '../assets/imagens.png';
-
+import foto1 from '../assets/image1.png';
+import imagem from '../assets/home-1.png';
 //
 import { FaFacebook } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
@@ -16,7 +15,7 @@ import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import SearchIcon from '@mui/icons-material/Search';
 import { FloatButton } from 'antd';
 const App = () => {
-  
+
   const [isHalfway, setIsHalfway] = useState(false);
   const [pesquisar, setPesquisar] = React.useState();
 
@@ -92,79 +91,102 @@ const App = () => {
       </div>
       <section className='Textos'>
         <h2 className='textoH2'>
-          Bem-vindo ao o seu portal<br/>
+          Bem-vindo ao o seu portal<br />
           confiável para encontrar e recuperar documentos
           perdidos!
         </h2>
         <h3 className='texto1'>
           Nossa missão é reunir pessoas com seus
-          documentos perdidos de forma rápida, segura e eficiente.<br/>
+          documentos perdidos de forma rápida, segura e eficiente.<br />
           Sabemos o quão estressante pode ser perder um documento importante,
           como um Bilhete de Identidade (BI) ou uma carta de condução, e estamos aqui para ajudar.
         </h3>
       </section>
-      {/*  */}
+      {/*Cartao de conteudo  */}
       <div className="card-container">
         <Card bordered={false} className="card-style">
           <div className="circle">
             <NotificationsNoneIcon className="icon" color='#fff' />
           </div>
+          <div className='descIdentidade'>
+            <img className="card-image" src={Photo} alt="Ac" />
+            <div className='posicao_desc'>
+              <h5>Nome: ####</h5>
+              <h5>BI:#####</h5>
+            </div>
+          </div>
 
-          <img className="card-image" src={Photo} alt="Ac" />
         </Card>
 
         <Card bordered={false} className="card-style">
           <div className="circle">
             <NotificationsNoneIcon className="icon" color='#fff' />
           </div>
-          <img className="card-image" src={Photo} alt="Ac" />
+          <div className='descIdentidade'>
+            <img className="card-image" src={Photo} alt="Ac" />
+            <div className='posicao_desc'>
+              <h5>Nome: ####</h5>
+              <h5>BI:#####</h5>
+            </div>
+          </div>
         </Card>
 
         <Card bordered={false} className="card-style">
           <div className="circle">
             <NotificationsNoneIcon className="icon" color='#fff' />
           </div>
-          <img className="card-image" src={Photo} alt="Ac" />
+          <div className='descIdentidade'>
+            <img className="card-image" src={Photo} alt="Ac" />
+            <div className='posicao_desc'>
+              <h5>Nome: ####</h5>
+              <h5>BI:#####</h5>
+            </div>
+          </div>
         </Card>
 
         <Card bordered={false} className="card-style">
           <div className="circle">
             <NotificationsNoneIcon className="icon" color='#fff' />
           </div>
-          <img className="card-image" src={Photo} alt="Ac" />
+          <div className='descIdentidade'>
+            <img className="card-image" src={Photo} alt="Ac" />
+            <div className='posicao_desc'>
+              <h5>Nome: ####</h5>
+              <h5>BI:#####</h5>
+            </div>
+          </div>
         </Card>
 
       </div>
-
-
-
-     <div>
-     <h4 id='H5'>Sobre nós</h4>
-     <div className={`descricao ${isHalfway ? 'animate-slide' : ''}`}>
-        <div style={{ color: '#000', textAlign: 'justify' }}>
-          <div className='H6menu'>
-            <h6 id='H6' >Quem Somos ?</h6>
+      {/*Descricao da empresa  */}
+      <div>
+        <h4 id='H7'>SOBRE NÓS</h4>
+        <h4 id='H5'>Sobre nós</h4>
+        <div className={`descricao ${isHalfway ? 'animate-slide' : ''}`}>
+          <div style={{ color: '#000', textAlign: 'justify' }}>
+            <div className='H6menu'>
+              <h6 id='H6' >Quem Somos ?</h6>
+            </div>
+            <p className='textoparagrafo'>
+              Somos uma equipe dedicada de profissionais comprometidos em fornecer
+              um serviço comunitário valioso. Nosso site foi criado para servir como
+              um ponto centralizado onde pessoas podem registrar
+              documentos perdidos e encontrados, facilitando a devolução segura
+              dos mesmos aos seus legítimos proprietários.
+            </p>
           </div>
-          <p  className='textoparagrafo'>
-            Somos uma equipe dedicada de profissionais comprometidos em fornecer
-            um serviço comunitário valioso. Nosso site foi criado para servir como
-            um ponto centralizado onde pessoas podem registrar
-            documentos perdidos e encontrados, facilitando a devolução segura
-            dos mesmos aos seus legítimos proprietários.
-          </p>
-        </div>
 
-        <div>
-          <img src={imagem} alt='Pessoa' className='imagemPrincipal'/>
+          <div>
+            <img src={imagem} alt='Pessoa' className='imagemPrincipal' />
+          </div>
         </div>
       </div>
-     </div>
 
-{/*  */}
+      {/*  */}
       <div>
 
 
-{/* Texto */}
+        {/* Texto */}
 
       </div>
 

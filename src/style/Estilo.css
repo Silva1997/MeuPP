@@ -1,8 +1,23 @@
 @media (min-width: 1100px) {
+    .posicao_desc {
+        position: relative;
+        top: '-1rem';
+        font-style: normal;
+        font-family: "Dosis", sans-serif;
+        font-optical-sizing: auto;
+    }
+    .descIdentidade {
+        display: flex;
+        justify-self: center;
+        flex-direction: row;
+        gap: 0.9rem;
+    }
     .imagemPrincipal {
+        position: relative;
+        bottom: -8rem;
         object-fit: contain;
-        width: 100%;
-        height: 27rem;
+        width: 90%;
+        height: 90%;
         animation: moverImagem 1.1s linear infinite alternate;
         /* Aplica a animação */
     }
@@ -141,17 +156,30 @@
     .H6menu {
         display: flex;
         justify-content: center;
-        margin: 1rem;
+        margin-top: 0.4rem;
+    }
+    #H7 {
+        /* margin-top: 2.5rem; */
+        text-align: center;
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        margin: 0;
+        position: relative;
+        top: 2.4rem;
+        color: rgba(0, 0, 0, 0.1);
+        font-size: 2.4rem;
+        z-index: 1;
     }
     #H5 {
-        margin-top: 1.2rem;
+        margin: 0;
         font-family: "Noto Sans Sundanese", sans-serif;
         font-optical-sizing: auto;
         font-weight: 700;
         color: #161616;
         font-style: normal;
         text-align: center;
-        font-size: 2.4rem;
+        font-size: 2rem;
     }
     #H6 {
         font-family: "Noto Sans Sundanese", sans-serif;
@@ -168,8 +196,9 @@
         width: 30vh;
     }
     .textoparagrafo {
+        margin: 0;
         padding: 1rem;
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         text-align: justify;
         font-family: "Dosis", sans-serif;
         font-optical-sizing: auto;
@@ -369,6 +398,30 @@
 }
 
 @media (max-width: 360px) {
+    #H7 {
+        /* margin-top: 2.5rem; */
+        text-align: center;
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        margin: 0;
+        position: relative;
+        top: 2rem;
+        color: rgba(0, 0, 0, 0.1);
+        font-size: 2rem;
+        z-index: 1;
+    }
+    .descIdentidade {
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        gap: 0.9rem;
+        text-align: start;
+        font-family: "Dosis", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
     .animate-slide {
         animation: slideRight 1s forwards;
     }
@@ -407,7 +460,7 @@
         font-style: normal;
     }
     #H5 {
-        margin-top: 1.2rem;
+        /* margin-top: 1.2rem; */
         font-family: "Noto Sans Sundanese", sans-serif;
         font-optical-sizing: auto;
         font-weight: 700;
@@ -415,6 +468,7 @@
         font-style: normal;
         text-align: center;
         font-size: 1.7rem;
+        margin: 0;
     }
     .Textos {
         text-align: center;
@@ -456,8 +510,12 @@
         font-weight: 500;
     }
     #h6p {
-        text-align: center;
-        margin: 0;
+        font-family: "Dosis", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        color: #fff;
+        font-size: larger;
     }
     #h6pp {
         text-align: center;
@@ -486,7 +544,7 @@
     .H6menu {
         display: flex;
         justify-content: center;
-        margin: 1rem;
+        margin: 0;
     }
     #H6 {
         text-align: center;
@@ -583,7 +641,8 @@
         border-right: 2px solid #b152dd;
         border-left: 2px solid #b152dd;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 10vh 10vh 10vh;
+        grid-template-rows: 35vh 35vh 35vh;
+        gap: 0.2rem;
         background-color: #26272b;
     }
     .divfoote {
@@ -602,9 +661,9 @@
         text-align: right
     }
     .site-footer .social-icons a {
-        width: 40px;
-        height: 40px;
-        line-height: 40px;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
         margin-left: 6px;
         margin-right: 0;
         border-radius: 100%;
@@ -673,6 +732,30 @@
 }
 
 @media (max-width: 375px) {
+    #H7 {
+        /* margin-top: 2.5rem; */
+        text-align: center;
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        margin: 0;
+        position: relative;
+        top: 2rem;
+        color: rgba(0, 0, 0, 0.1);
+        font-size: 2rem;
+        z-index: 1;
+    }
+    .descIdentidade {
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        gap: 0.9rem;
+        text-align: start;
+        font-family: "Dosis", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
     .animate-slide {
         animation: slideRight 1s forwards;
     }
@@ -900,6 +983,30 @@
 }
 
 @media (max-width: 600px) {
+    #H7 {
+        /* margin-top: 2.5rem; */
+        text-align: center;
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        margin: 0;
+        position: relative;
+        top: 2.5rem;
+        color: rgba(0, 0, 0, 0.1);
+        font-size: 2.5rem;
+        z-index: 1;
+    }
+    .descIdentidade {
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        gap: 0.9rem;
+        text-align: start;
+        font-family: "Dosis", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
     .animate-slide {
         animation: slideRight 1s forwards;
     }
@@ -929,14 +1036,15 @@
         }
     }
     #H5 {
-        margin-top: 1.2rem;
+        /* margin-top: 1.2rem; */
         font-family: "Noto Sans Sundanese", sans-serif;
         font-optical-sizing: auto;
         font-weight: 700;
         color: #161616;
         font-style: normal;
         text-align: center;
-        font-size: 2rem;
+        font-size: 2.3rem;
+        margin: 0;
     }
     .Textos {
         text-align: center;
@@ -1016,16 +1124,18 @@
     .H6menu {
         display: flex;
         justify-content: center;
-        margin: 1rem;
+        margin: 0;
     }
     #H6 {
         text-align: center;
         font-weight: 600;
         background-color: #e22d14;
         border-radius: 10px 10px;
-        color: #eceeef;
-        padding: 0.2rem;
-        width: 20vh;
+        color: #fff;
+        padding: 0.4rem;
+        font-size: 1rem;
+        width: 24vh;
+        margin: 0;
     }
     .INput {
         display: 'flex';
@@ -1066,9 +1176,130 @@
         justify-content: center;
         margin-top: 1.2rem;
     }
+    .social-icons {
+        margin-top: 3rem;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none
+    }
+    .social-icons li {
+        display: inline-block;
+        margin-bottom: 4px
+    }
+    .social-icons li.title {
+        margin-right: 15px;
+        text-transform: uppercase;
+        color: #96a2b2;
+        font-weight: 700;
+        font-size: 13px
+    }
+    .social-icons a {
+        background-color: #eceeef;
+        color: #818a91;
+        font-size: 16px;
+        display: inline-block;
+        line-height: 44px;
+        width: 44px;
+        height: 44px;
+        text-align: center;
+        margin-right: 8px;
+        border-radius: 100%;
+        -webkit-transition: all .2s linear;
+        -o-transition: all .2s linear;
+        transition: all .2s linear
+    }
+    .social-icons a:active,
+    .social-icons a:focus,
+    .social-icons a:hover {
+        color: #fff;
+        background-color: #29aafe
+    }
+    .social-icons.size-sm a {
+        line-height: 34px;
+        height: 34px;
+        width: 34px;
+        font-size: 14px
+    }
+    .social-icons a.facebook:hover {
+        background-color: #3b5998
+    }
+    .social-icons a.twitter:hover {
+        background-color: #00aced
+    }
+    .social-icons a.linkedin:hover {
+        background-color: #007bb6
+    }
+    .social-icons a.dribbble:hover {
+        background-color: #ea4c89
+    }
+    #h6p {
+        font-family: "Dosis", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        text-align: center;
+        font-style: normal;
+        color: #fff;
+        font-size: large;
+        margin: 0;
+    }
+    #h6pp {
+        text-align: center;
+        font-size: 11pt;
+        margin: 0;
+        color: #fff;
+        /* background-color: #eceeef; */
+    }
+    .site-footer {
+        margin-top: 32px;
+        /* z-index: 1; */
+        display: grid;
+        /* position: relative; */
+        border-right: 2px solid #b152dd;
+        border-left: 2px solid #b152dd;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 10vh 10vh 10vh;
+        flex-direction: column;
+        /* Dividindo em 3 colunas */
+        /* Espaçamento entre as colunas */
+        min-height: 7rem;
+        gap: 0.2rem;
+        background-color: #26272b;
+        /* margin: 0;
+    padding: 0; */
+    }
+    .divfoote {
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .site-footer .social-icons {
+        text-align: right
+    }
+    .site-footer .social-icons a {
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        margin-left: 6px;
+        margin-right: 0;
+        border-radius: 100%;
+        background-color: #33353d
+    }
 }
 
 @media (max-width: 414px) {
+    .descIdentidade {
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        gap: 0.9rem;
+        text-align: start;
+        font-family: "Dosis", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
     .animate-slide {
         animation: slideRight 1s forwards;
     }
@@ -1106,6 +1337,19 @@
         font-weight: 400;
         font-style: normal;
     }
+    #H7 {
+        /* margin-top: 2.5rem; */
+        text-align: center;
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        margin: 0;
+        position: relative;
+        top: 2rem;
+        color: rgba(0, 0, 0, 0.1);
+        font-size: 2rem;
+        z-index: 1;
+    }
     #H5 {
         margin-top: 1.2rem;
         font-family: "Noto Sans Sundanese", sans-serif;
@@ -1115,6 +1359,7 @@
         font-style: normal;
         text-align: center;
         font-size: 1.7rem;
+        margin: 0;
     }
     .Textos {
         text-align: center;
@@ -1171,7 +1416,7 @@
     .H6menu {
         display: flex;
         justify-content: center;
-        margin: 1rem;
+        margin: 0;
     }
     #H6 {
         text-align: center;
@@ -1227,13 +1472,20 @@
         margin-top: 1.2rem;
     }
     #h6p {
+        font-family: "Dosis", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
         text-align: center;
+        font-style: normal;
+        color: #fff;
+        font-size: large;
         margin: 0;
     }
     #h6pp {
         text-align: center;
         font-size: 11pt;
         margin: 0;
+        color: #fff;
         /* background-color: #eceeef; */
     }
     .site-footer {
@@ -1244,12 +1496,12 @@
         border-right: 2px solid #b152dd;
         border-left: 2px solid #b152dd;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 6vh 6vh 6vh;
+        grid-template-rows: 10vh 10vh 10vh;
         flex-direction: column;
         /* Dividindo em 3 colunas */
-        grid-gap: 20px;
         /* Espaçamento entre as colunas */
         min-height: 7rem;
+        gap: 0.2rem;
         background-color: #26272b;
         /* margin: 0;
     padding: 0; */
@@ -1271,9 +1523,9 @@
         text-align: right
     }
     .site-footer .social-icons a {
-        width: 40px;
-        height: 40px;
-        line-height: 40px;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
         margin-left: 6px;
         margin-right: 0;
         border-radius: 100%;
@@ -1342,6 +1594,17 @@
 }
 
 @media (max-width: 412px) {
+    .descIdentidade {
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        gap: 0.9rem;
+        text-align: start;
+        font-family: "Dosis", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
     .animate-slide {
         animation: slideRight 1s forwards;
     }
@@ -1379,6 +1642,19 @@
         font-weight: 400;
         font-style: normal;
     }
+    #H7 {
+        /* margin-top: 2.5rem; */
+        text-align: center;
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        margin: 0;
+        position: relative;
+        top: 2rem;
+        color: rgba(0, 0, 0, 0.1);
+        font-size: 2rem;
+        z-index: 1;
+    }
     #H5 {
         margin-top: 1.2rem;
         font-family: "Noto Sans Sundanese", sans-serif;
@@ -1388,6 +1664,7 @@
         font-style: normal;
         text-align: center;
         font-size: 1.7rem;
+        margin: 0;
     }
     .Textos {
         text-align: center;
@@ -1429,11 +1706,15 @@
         height: 4.6vh;
     }
     #h6p {
+        font-family: "Dosis", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
         text-align: center;
         margin: 0;
     }
     #h6pp {
-        text-align: justify;
+        text-align: center;
         font-size: 10pt;
         margin: 0;
     }
@@ -1465,7 +1746,7 @@
     .H6menu {
         display: flex;
         justify-content: center;
-        margin: 1rem;
+        margin: 0;
     }
     #H6 {
         text-align: center;
@@ -1523,14 +1804,10 @@
         border-right: 2px solid #b152dd;
         border-left: 2px solid #b152dd;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 6vh 6vh 6vh;
-        /* Dividindo em 3 colunas */
-        grid-gap: 20px;
-        /* Espaçamento entre as colunas */
+        grid-template-rows: 8vh 8vh 8vh;
+        gap: 0.2rem;
         min-height: 7rem;
         background-color: #26272b;
-        /* margin: 0;
-    padding: 0; */
     }
     .divfoote {
         display: flex;
@@ -1548,9 +1825,9 @@
         text-align: right
     }
     .site-footer .social-icons a {
-        width: 40px;
-        height: 40px;
-        line-height: 40px;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
         margin-left: 6px;
         margin-right: 0;
         border-radius: 100%;
@@ -1571,7 +1848,7 @@
     }
     .social-icons li {
         display: inline-block;
-        margin-bottom: 4px
+        margin-bottom: 0
     }
     .social-icons li.title {
         margin-right: 15px;

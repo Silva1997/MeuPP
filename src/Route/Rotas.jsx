@@ -12,24 +12,24 @@ const { SubMenu } = Menu;
 function CustomMenu() {
   const items = [
     {
-      label: 'Home',
-      key: 'home',
+      label: 'Pagina inicial',
+      key: 'Home',
       icon: <TiHomeOutline color='#000' size={20} />,
       link: '*',
     },
     {
-      label: 'Perfil',
+      label: 'Consultar',
       key: 'profile',
       icon: <FaRegUser color='#000' size={20}/>,
       link: '/Usuario',
     },
     {
-      label: 'Settings',
+      label: 'Registar',
       key: 'settings',
       icon: <CiSettings color='#000' size={22} />,
       children: [
-        { label: 'General', key: 'general' },
-        { label: 'Account', key: 'account' },
+        { label: 'Documentos', key: 'general' },
+        { label: 'Denuncia', key: 'account' },
       ],
     },
   ];
