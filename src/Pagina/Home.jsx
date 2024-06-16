@@ -61,7 +61,7 @@ const App = () => {
           onChange={(e) => setPesquisar(e.target.value)}
           onKeyDown={handlePesquisa}
         />
-        <button className='ButaoN' type="submit">
+        <button className='ButaoN' id='butaon' type="submit">
           Pesquisar
         </button>
       </div>
@@ -211,7 +211,7 @@ export default App;
 function Rodape() {
   return (
     <>
-      <footer className="site-footer">
+      <footer className="site-footer" id='rodape'>
 
         <div className='divfooter' >
           <div style={{ marginTop: '2rem', marginLeft: '2rem' }}>
@@ -223,7 +223,7 @@ function Rodape() {
           </div>
 
           <div>
-            <ul className="social-icons">
+            <ul className="social-icons" id='socialid'>
               <li><a className="facebook" href="#"><FaFacebook /></a></li>
               <li><a className="facebook" href="#"><FaInstagram /></a></li>
               <li><a className="facebook" href="#"><FaXTwitter /></a></li>

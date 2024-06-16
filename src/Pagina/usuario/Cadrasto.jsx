@@ -57,8 +57,10 @@ const App1 = () => {
     };
 
     return (
-        <div style={{ padding: '12px', border: '1px solid #000', margin: '2rem' }}>
-            <Button onClick={toggleForm}>{showForm ? 'Esconder formulário' : 'Mostrar formulário'}</Button>
+        <>
+          <div style={{paddingTop:'2rem'}}>
+          <div style={{margin:'3rem', boder:' 1px 1px solid #000', padding:'2rem'}}>
+          <Button onClick={toggleForm}>{showForm ? 'Esconder formulário' : 'Mostrar formulário'}</Button>
             {showForm &&
                 (
                     <Form
@@ -139,7 +141,11 @@ const App1 = () => {
                         </Form.Item>
                     </Form>
                 )}
-        </div>
+          </div>
+          </div>
+        
+       
+        </>
     );
 };
 
